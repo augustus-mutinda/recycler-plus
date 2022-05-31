@@ -1,4 +1,4 @@
-package me.augustus.recycler.plus
+package me.augustus.toolkit.recycler
 
 import android.annotation.SuppressLint
 import android.app.Activity

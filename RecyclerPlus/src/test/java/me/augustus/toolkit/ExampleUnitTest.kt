@@ -1,4 +1,4 @@
-package me.augustus.recycler
+package me.augustus.toolkit
 
 import org.junit.Test
 

@@ -7,6 +7,8 @@ plugins {
 android {
     compileSdk 31
 
+    namespace = "augustus.toolkit"
+
     defaultConfig {
         minSdk 22
         targetSdk 31
@@ -49,8 +51,8 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                groupId = 'me.augustus.recycler.plus'
-                artifactId = 'recycler-plus'
+                groupId = 'augustus.toolkit'
+                artifactId = 'augustus-toolkit'
                 version = '1.0.0'
             }
         }
