@@ -17,9 +17,9 @@ import android.view.ViewTreeObserver;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatTextView;
 
-public class ShowMoreTextView extends AppCompatTextView {
+public class ToolKitTextView extends AppCompatTextView {
 
-    private static final String TAG = ShowMoreTextView.class.getName();
+    private static final String TAG = ToolKitTextView.class.getName();
 
     private int showingLine = 1;
     private int showingChar;
@@ -39,11 +39,11 @@ public class ShowMoreTextView extends AppCompatTextView {
     private boolean isAlreadySet;
 
 
-    public ShowMoreTextView(Context context) {
+    public ToolKitTextView(Context context) {
         super(context);
     }
 
-    public ShowMoreTextView(Context context, AttributeSet attrs) {
+    public ToolKitTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
 
     }

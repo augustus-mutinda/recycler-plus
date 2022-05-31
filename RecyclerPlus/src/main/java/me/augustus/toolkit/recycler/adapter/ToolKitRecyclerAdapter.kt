@@ -1,4 +1,4 @@
-package me.augustus.toolkit.recycler
+package me.augustus.toolkit.recycler.adapter
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -11,10 +11,10 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
 
-abstract class RecyclerPlusAdapter<T : Any, VH : ViewBinding> :
-    RecyclerView.Adapter<RecyclerPlusAdapter<T, VH>.MCViewHolder>() {
-    private var onBottomReachedListener: RecyclerPlusOnBottomReached? = null
-    var itemListener: RecyclerPlusOnItemSelected<T>? = null
+abstract class ToolKitRecyclerAdapter<T : Any, VH : ViewBinding> :
+    RecyclerView.Adapter<ToolKitRecyclerAdapter<T, VH>.MCViewHolder>() {
+    private var onBottomReachedListenerToolKit: ToolKitRecyclerOnBottomReached? = null
+    var itemListenerToolKit: ToolKitRecyclerOnItemSelected<T>? = null
     var activity: Activity? = null
     var navController: NavController? = null
 
@@ -42,8 +42,8 @@ abstract class RecyclerPlusAdapter<T : Any, VH : ViewBinding> :
         this.items.submitList(items)
     }
 
-    open fun setOnBottomReachedListener(onBottomReachedListener: RecyclerPlusOnBottomReached?) {
-        this.onBottomReachedListener = onBottomReachedListener
+    open fun setOnBottomReachedListener(onBottomReachedListenerToolKit: ToolKitRecyclerOnBottomReached?) {
+        this.onBottomReachedListenerToolKit = onBottomReachedListenerToolKit
     }
 
     abstract fun onBindViewHolder(binding: VH, datum: T, position: Int)
@@ -66,7 +66,7 @@ abstract class RecyclerPlusAdapter<T : Any, VH : ViewBinding> :
 
     override fun onBindViewHolder(holder: MCViewHolder, position: Int) {
         if (position == itemCount - 1)
-            onBottomReachedListener?.onBottomReached(position)
+            onBottomReachedListenerToolKit?.onBottomReached(position)
 
         onBindViewHolder(holder.binding, items.currentList[position], position)
     }
