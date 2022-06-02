@@ -1,4 +1,4 @@
-package me.augustus.toolkit.recycler.adapter
+package argon.digital.toolkit
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
+import argon.digital.toolkit.util.ToolKitRecyclerOnBottomReached
+import argon.digital.toolkit.util.ToolKitRecyclerOnItemSelected
 
 abstract class ToolKitRecyclerAdapter<T : Any, VH : ViewBinding> :
     RecyclerView.Adapter<ToolKitRecyclerAdapter<T, VH>.MCViewHolder>() {

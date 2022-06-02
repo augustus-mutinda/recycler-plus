@@ -1,4 +1,4 @@
-package me.augustus.toolkit
+package argon.digital.toolkit
 
 import org.junit.Test
 

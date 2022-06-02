@@ -1,6 +1,6 @@
 [![Release](https://jitpack.io/v/mahimrocky/ShowMoreText.svg)](https://github.com/mahimrocky/ShowMoreText/releases/tag/1.0.2)
 
-# Augustus's Toolkit
+# Argon Digital's Android Toolkit
 
 This is simple library that simplifies RecyclerView Adapter and Adds TextView that has "Read more" and "Read less" functions.
 
@@ -19,7 +19,7 @@ This is simple library that simplifies RecyclerView Adapter and Adds TextView th
 
 ```sh
 dependencies {
-	   implementation 'com.github.augustus-mutinda:augustus-toolkit:1.0.2'
+	   implementation 'com.github.argon-digital:toolkit:1.0.0'
 	}
 ```
 You have to use just this xml. You can modify or set color your own textView. **But don`t need to use maxLength or maxLine in text view. It may be confilict with library**.

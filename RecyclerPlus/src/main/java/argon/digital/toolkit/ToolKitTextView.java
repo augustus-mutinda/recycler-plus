@@ -1,4 +1,4 @@
-package me.augustus.toolkit.textview;
+package argon.digital.toolkit;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -16,6 +16,8 @@ import android.view.ViewTreeObserver;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatTextView;
+
+import argon.digital.toolkit.util.SaveState;
 
 public class ToolKitTextView extends AppCompatTextView {
 

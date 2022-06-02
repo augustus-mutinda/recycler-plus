@@ -7,10 +7,8 @@ plugins {
 android {
     compileSdk 31
 
-    namespace = "augustus.toolkit"
-
     defaultConfig {
-        minSdk 22
+        minSdk 21
         targetSdk 31
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -51,9 +49,9 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                groupId = 'augustus.toolkit'
-                artifactId = 'augustus-toolkit'
-                version = '1.0.0'
+                groupId = 'argon.digital'
+                artifactId = 'toolkit'
+                version = '1.0.4'
             }
         }
     }
