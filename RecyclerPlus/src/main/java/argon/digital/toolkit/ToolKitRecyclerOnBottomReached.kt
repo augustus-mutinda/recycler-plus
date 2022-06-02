@@ -1,4 +1,4 @@
-package argon.digital.toolkit.util
+package argon.digital.toolkit
 
 interface ToolKitRecyclerOnBottomReached {
     fun onBottomReached(position: Int)

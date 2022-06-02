@@ -10,8 +10,6 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
-import argon.digital.toolkit.util.ToolKitRecyclerOnBottomReached
-import argon.digital.toolkit.util.ToolKitRecyclerOnItemSelected
 
 abstract class ToolKitRecyclerAdapter<T : Any, VH : ViewBinding> :
     RecyclerView.Adapter<ToolKitRecyclerAdapter<T, VH>.MCViewHolder>() {

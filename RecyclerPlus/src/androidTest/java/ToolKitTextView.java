@@ -1,5 +1,3 @@
-package argon.digital.toolkit;
-
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Parcelable;
@@ -17,7 +15,7 @@ import android.view.ViewTreeObserver;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatTextView;
 
-import argon.digital.toolkit.util.SaveState;
+import argon.digital.toolkit.SaveState;
 
 public class ToolKitTextView extends AppCompatTextView {
 

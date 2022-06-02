@@ -1,5 +1,3 @@
-package argon.digital.toolkit;
-
 import android.content.Context;
 import android.util.AttributeSet;
 
